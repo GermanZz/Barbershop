@@ -10,7 +10,7 @@ body{
     text-transform: uppercase;
 
     background-color: #000000;
-    background-image: url(../img/bg.jpg);
+    background-image: url(img/bg.jpg);
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -88,7 +88,7 @@ a{
     color: #000000;
 
     background-color: #f8f5f2;
-    background-image: url(../img/light-bg.jpg);
+    background-image: url(img/light-bg.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -276,7 +276,7 @@ a{
     color: #ffffff;
     
     background-color: #212121;
-    background-image: url(../img/footer-bg.jpg);
+    background-image: url(img/footer-bg.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
@@ -318,7 +318,7 @@ a{
     color: #000000;
 
     background-color: #f8f3f0;
-    background-image: url(../img/light-bg.jpg);
+    background-image: url(img/light-bg.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 
