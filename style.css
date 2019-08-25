@@ -24,6 +24,31 @@ body{
     background-repeat: repeat;
 }
 
+.inner-page .main-header{
+    margin-bottom: 50px;
+
+    background-color: #000000;
+}
+
+.inner-page .main-navigation{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.inner-page .main-header-logo{
+    order: 0;
+
+    width: 111px;
+    height: 24px;
+    
+    padding: 23px 20px;
+}
+
+.inner-page .user-navigation{
+    margin-left: auto;
+}
+
 a{
     text-decoration: none;
 }
@@ -59,14 +84,14 @@ a{
     line-height: 20px;
     color: #ffffff;
 
-    background-color: #000000;
+    background-color: transparent;
 }
 
 .main-navigation-wrapper{
     width: 100%;
     margin-bottom: 60px;
 
-    background-color: #0000000;
+    background-color: #000000;
 }
 
 .container{
@@ -200,11 +225,19 @@ a{
 }
 
 .page-title{
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+
     font-size: 30px;
     line-height: 42px;
 }
 
 .breadcrumbs{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+
     list-style: none;
 }
 
@@ -219,6 +252,10 @@ a{
 
 .breadcrumbs-current{
     color: #acaaa8;
+}
+
+.filters{
+    width: 180px;
 }
 
 .filter fieldset{
@@ -246,13 +283,36 @@ a{
     opacity: 0.5;
 }
 
+.catalog-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog{
+    width: 700px;
+}
+
 .catalog-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+
     list-style: none;
 }
 
 .catalog-item{
+    width: 220px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+
     background-color: #f8f8f8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:nth-child(3n){
+    margin-right: 0;
 }
 
 .catalog-item:hover{
@@ -286,6 +346,9 @@ a{
 }
 
 .pagination-list{
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -315,6 +378,10 @@ a{
     background-color: #ffffff;
 }
 
+.product-photos{
+    width: 460px;
+}
+
 .product-photo-preview{
     list-style: none;
 }
@@ -339,6 +406,10 @@ a{
     background-color: #e5e5e5;
 }
 
+.product-info{
+    width: 390px;
+}
+
 .product-info h3{
     font-size: 24px;
     line-height: 30px; 
@@ -361,6 +432,10 @@ a{
 
 .main-footer .container{
     display: flex;
+}
+
+.inner-page .main-footer{
+    margin-top: 45px;
 }
 
 .footer-contacts{
