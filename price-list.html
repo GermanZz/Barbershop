@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<title>Карточка товара Барбершопа «Бородинский»</title>
+	<title>Прайс-лист Барбершопа «Бородинский»</title>
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
@@ -16,7 +16,7 @@
 			<ul class="site-navigation">
 				<li><a href="">Информация</a></li>
 				<li><a href="">Новости</a></li>
-				<li><a href="">Прайс-лист</a></li>
+				<li class="site-navigation-current"><a href="">Прайс-лист</a></li>
 				<li><a href="">Магазин</a></li>
 				<li><a href="">Контакты</a></li>
 			</ul>
@@ -26,46 +26,53 @@
 		</nav>
 	</header>
 	<main class="container">
-		<h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
-		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="#">Магазин</a></li>
-			<li><a href="#">Средства для ухода</a></li>
-			<li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
-		</ul>
-		<div class="catalog-columns">
-			<section class="product-photos">
-				<h2 class="visually-hidden">Изображения товара</h2>
-				<p class="product-photo-full">
-					<img src="img/item_1_big.jpg" alt="Фото всего набора" width="460" height="498">
-				</p>
-				<ul class="product-photo-preview">
-					<li><img src="img/item_1_2.jpg" alt="Фото в анфас" width="140" height="149"></li>
-					<li><img src="img/item_1_3.jpg" alt="Фото в профиль" width="140" height="149"></li>
-					<li><img src="img/item_1_small.jpg" alt="Фото отдельной части" width="140" height="149"></li>
-				</ul>
-			</section>
-			<section class="product-info">
-				<h2 class="visually-hidden">Описание товара</h2>
-				<div class="product-description">
-					<p class="product-availability">Есть в наличии</p>
-					<p class="product-article">Артикул: dexter-ae</p>
-				</div>
-				<p class="product-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-				<p class="product-price">
-					<b>2 900 ₽</b>
-					<a class="button" href="">Купить</a>
-				</p>
-				<h3>В набор входят:</h3>
-				<ul>
-					<li>Средство для умывания (50 мл)</li>
-					<li>Увлажняющий крем (50 мл)</li>
-					<li>Крем для бритья (50 мл)</li>
-					<li>Крем после бритья, шампунь (50 мл)</li>
-					<li>Удобная кожаная косметичка</li>
-				</ul>
-			</section>
+		<div class="inner-page-container">
+			<h1 class="page-title">Прайс-лист</h1>
+			<ul class="breadcrumbs">
+				<li><a href="">Главная</a></li>
+				<li class="breadcrumbs-current"><a href="">Прайс-лист</a></li>
+			</ul>
 		</div>
+		<section class="inner-content">
+			<h2 class="big-heading">Истинно мужская классика</h2>
+			<div class="inner-columns">
+				<div class="inner-column-left">
+					<h3>Мы используем только <br> лучшие средства</h3>
+					<ul class="custom-list-1">
+						<li>Baxter of California</li>
+						<li>Mr Natty</li>
+						<li>Suavecito</li>
+						<li>Malin+Goetz</li>
+					</ul>
+				</div>
+				<div class="inner-column-right">
+					<h3>Цены на услуги <br> наших мастеров:</h3>
+					<table class="custom-table-1">
+						<tr>
+							<td>Стрижка</td>
+							<td>1500 ₽</td>
+						</tr>
+						<tr>
+							<td>Стрижка бороды</td>
+							<td>500 ₽</td>
+						</tr>
+						<tr>
+							<td>Накрутка усов</td>
+							<td>350 ₽</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="inner-columns">
+				<h3>Несколько слов о нас:</h3>
+				<div class="inner-column-left">
+					<p class="short-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+				</div>	
+				<div class="inner-column-right">	
+					<p class="short-text">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer class="main-footer">
 		<div class="container">
