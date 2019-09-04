@@ -1070,6 +1070,41 @@ input[type='radio'].visually-hidden{
     background-color: #ffffff;
 }
 
+@keyframes bounce{
+    0%{ 
+        transform: translateY(-2000px); 
+    }
+    70%{
+         transform: translateY(30px); 
+    }
+    90%{
+         transform: translateY(-10px);
+    }
+    100%{
+         transform: translateY(0); 
+    }
+}
+
+@keyframes shake{
+    0%,
+    100%{
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90%{
+        transform: translateX(-15px);
+    }
+    20%,
+    40%,
+    60%,
+    80%{
+        transform: translateX(15px);
+    }
+}
+
 .modal{
     position: fixed;
 
@@ -1083,6 +1118,16 @@ input[type='radio'].visually-hidden{
     background-repeat: repeat;
     -webkit-box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
             box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-show{
+    display: block;
+    animation: bounce 0.8s; 
+ } 
+
+
+.modal-error{
+    animation: shake 0.6s;
 }
 
 .modal h2{
@@ -1102,6 +1147,9 @@ input[type='radio'].visually-hidden{
 .modal-login h2{
     margin: 0;
     margin-bottom: 20px;
+
+    font-size: 30px;
+    line-height: 42px;
 }
 
 .modal-description{
@@ -1284,9 +1332,8 @@ input[type='radio'].visually-hidden{
 
     width: 766px;
     height: 561px;
-    -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-            transform: translate(-50%,-50%);
+    margin-top: -280px;
+    margin-left: -383px;
 
     border: 7px solid white;
 }
@@ -1309,50 +1356,6 @@ input[type='radio'].visually-hidden{
 
 .inner-content{
     margin-bottom: 75px;
-}
-
-.modal-show{
-    display: block;
-    animation: bounce 0.6s; 
- } 
-
-@keyframes bounce{
-    0%{ 
-        transform: translateY(-2000px); 
-    }
-    70%{
-         transform: translateY(30px); 
-    }
-    90%{
-         transform: translateY(-10px);
-    }
-    100%{
-         transform: translateY(0); 
-    }
-}
-
-.modal-error{
-    animation: shake 0.6s;
-}
-
-@keyframes shake{
-    0%,
-    100%{
-        transform: translateX(0);
-    }
-    10%,
-    30%,
-    50%,
-    70%,
-    90%{
-        transform: translateX(-15px);
-    }
-    20%,
-    40%,
-    60%,
-    80%{
-        transform: translateX(15px);
-    }
 }
 
 .inner-content .big-heading{
